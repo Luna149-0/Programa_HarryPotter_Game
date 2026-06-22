@@ -1,63 +1,82 @@
 # Harry Potter Game
-Harry Potter es un juego de escritorio inspirado en el universo de Harry Potter, donde los jugadores compiten en emocionantes carreras de escobas voladoras contra un oponente controlado por la computadora.
 
-Durante la carrera, los participantes pueden encontrar premios que aumentan su velocidad u obstáculos que dificultan su avance. El movimiento de los competidores se realiza de forma automática mediante hilos (threads), permitiendo una simulación dinámica y en tiempo real dentro de una interfaz gráfica.
+# Harry Potter Broom Racing
 
-Este proyecto fue desarrollado aplicando conceptos de Programación Orientada a Objetos (POO), estructuras de datos, ciclos e hilos.
+## Descripción
 
-Objetivo del Juego
+Harry Potter Broom Racing es un juego de escritorio inspirado en el universo de Harry Potter, donde los jugadores participan en carreras de escobas voladoras contra un oponente controlado por la computadora.
 
-Seleccionar o crear un personaje y competir contra un oponente en una carrera de escobas voladoras hasta llegar a la meta antes que el rival.
+Durante la carrera, los competidores pueden encontrar premios y obstáculos que afectan su rendimiento. El movimiento de los corredores se realiza mediante hilos independientes, permitiendo una simulación dinámica en tiempo real dentro de una interfaz gráfica.
 
-Características Principales
-Menú Principal
+Este proyecto fue desarrollado aplicando conceptos de Programación Orientada a Objetos (POO), estructuras de datos, ciclos y programación concurrente.
 
-El sistema cuenta con una pantalla inicial que permite:
+---
 
-Iniciar una partida.
-Crear un nuevo personaje.
-Consultar el Top de Puntajes.
-Salir de la aplicación.
-Gestión de Personajes
+## Objetivo
 
-Los jugadores pueden registrar nuevos personajes proporcionando:
+Permitir al jugador seleccionar o crear un personaje y competir en una carrera de escobas voladoras contra un oponente generado aleatoriamente, llegando a la meta antes que su rival.
 
-Código
-Nombre
-Casa
-Modelo de Escoba
+---
 
-También es posible seleccionar personajes previamente guardados.
+## Funcionalidades
 
- Modelos de Escobas
-Escoba	Velocidad	Tiempo de espera
-Nimbus 2000	Media	3 segundos
-Nimbus 2001	Alta	2 segundos
-Saeta de Fuego	Muy Alta	1 segundo
+### Menú Principal
 
-Cada escoba afecta directamente el rendimiento del personaje durante la carrera.
+La aplicación cuenta con una pantalla principal que permite:
 
-Sistema de Carreras
-El jugador compite contra un personaje seleccionado aleatoriamente por la computadora.
-Ambos corredores avanzan automáticamente mediante hilos independientes.
-La carrera se muestra gráficamente en tiempo real.
-Durante el recorrido pueden aparecer eventos especiales:
- Premios
- Obstáculos
+* Iniciar una partida.
+* Crear un nuevo personaje.
+* Consultar el top de puntajes.
+* Salir de la aplicación.
 
-Estos eventos modifican el avance de los competidores.
+### Gestión de Personajes
 
- Top de Puntajes
+Los usuarios pueden registrar nuevos personajes proporcionando:
 
-El sistema almacena los mejores resultados obtenidos por los jugadores para mostrar una clasificación de los mejores corredores.
+* Código
+* Nombre
+* Casa
+* Modelo de escoba
 
- Tecnologías Utilizadas
-Java
-Programación Orientada a Objetos (POO)
-Estructuras de Datos
-Hilos (Threads)
-Interfaz Gráfica (GUI)
- Estructura General del Proyecto
+También es posible seleccionar personajes previamente registrados.
+
+### Modelos de Escobas
+
+| Modelo         | Velocidad | Tiempo de espera |
+| -------------- | --------- | ---------------- |
+| Nimbus 2000    | Media     | 3 segundos       |
+| Nimbus 2001    | Alta      | 2 segundos       |
+| Saeta de Fuego | Muy alta  | 1 segundo        |
+
+Cada modelo influye directamente en la velocidad de avance durante la carrera.
+
+### Sistema de Carreras
+
+* El jugador compite contra un personaje seleccionado aleatoriamente por la computadora.
+* Cada competidor se ejecuta mediante un hilo independiente.
+* La carrera se visualiza en una interfaz gráfica en tiempo real.
+* Durante el recorrido pueden aparecer premios y obstáculos que modifican el avance de los participantes.
+
+### Top de Puntajes
+
+El sistema almacena los mejores resultados obtenidos por los jugadores para generar una clasificación de los competidores con mejor desempeño.
+
+---
+
+## Tecnologías Utilizadas
+
+* Java
+* Programación Orientada a Objetos
+* Hilos (Threads)
+* Estructuras de Datos
+* Interfaz Gráfica de Usuario (GUI)
+* Manejo de Archivos
+
+---
+
+## Estructura General
+
+```text
 src/
 │
 ├── personajes/
@@ -75,21 +94,40 @@ src/
 │   └── VentanaCarrera.java
 │
 └── Main.java
- Cómo Ejecutar
-Clonar el repositorio:
-git clone https://github.com/usuario/harry-potter-broom-racing.git
-Abrir el proyecto en NetBeans o IntelliJ IDEA.
-Compilar el proyecto.
-Ejecutar la clase principal:
-Main.java
- Conceptos Aplicados
-Encapsulamiento
-Herencia
-Polimorfismo
-Manejo de archivos
-Colecciones
-Programación concurrente con hilos
-Interfaces gráficas
-- Autor
+```
 
-Proyecto académico desarrollado por Ixchel Panjoj para aplicar conceptos fundamentales de programación en la creación de un videojuego de escritorio inspirado en el mundo de Harry Potter.
+---
+
+## Cómo Ejecutar
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/usuario/harry-potter-broom-racing.git
+```
+
+2. Abrir el proyecto en NetBeans, IntelliJ IDEA o el entorno de desarrollo de su preferencia.
+
+3. Compilar el proyecto.
+
+4. Ejecutar la clase principal `Main.java`.
+
+---
+
+## Conceptos Aplicados
+
+* Encapsulamiento
+* Herencia
+* Polimorfismo
+* Colecciones
+* Manejo de archivos
+* Programación concurrente
+* Interfaces gráficas
+
+---
+
+## Autor
+Ixchel Panjoj
+
+Proyecto académico desarrollado como parte de mi formación en Ingeniería en Ciencias y Sistemas, aplicando conceptos fundamentales de programación para la construcción de un videojuego de escritorio inspirado en el universo de Harry Potter.
+
